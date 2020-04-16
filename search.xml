@@ -4,13 +4,19 @@
   
     
     <entry>
-      <title>test</title>
-      <link href="/2020/04/16/test/"/>
-      <url>/2020/04/16/test/</url>
+      <title>测试</title>
+      <link href="/2020/04/16/%E6%B5%8B%E8%AF%95/"/>
+      <url>/2020/04/16/%E6%B5%8B%E8%AF%95/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>《因为本地难以解决文章首页和缩略图无效的问题所以向cdn方向寻求方法结果意外发现效果不错》</p></blockquote><p><img src="/" class="lazyload" data-src="/2020/04/16/%E6%B5%8B%E8%AF%95/about.jpg"  alt="test"></p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
       
     </entry>
     
