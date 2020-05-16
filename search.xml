@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>测试</title>
-      <link href="/posts/37773/"/>
-      <url>/posts/37773/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>如题</p></blockquote><p><img src="/" class="lazyload" data-src="/posts/37773/about.jpg"  alt="test"></p><pre><code></code></pre>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> test </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>hexo和github建站笔记</title>
       <link href="/posts/36862/"/>
       <url>/posts/36862/</url>
