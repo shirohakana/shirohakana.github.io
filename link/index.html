@@ -86,25 +86,40 @@ function activateLightMode(){
 <blockquote>
 <p>名字：shirohasaki<br>介绍：我只想安安静静地做个炸虾球<br>地址：<a href="http://nolabera.xyz" target="_blank" rel="noopener">http://nolabera.xyz</a><br>头像：<a href="https://cdn.jsdelivr.net/gh/shirohasaki/picture-repo/images/avatar.png" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/shirohasaki/picture-repo/images/avatar.png</a></p>
 </blockquote>
-</div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@1.4.14/dist/Valine.min.js"></script><script>var GUEST_INFO = ['nick','mail','link'];
-var guest_info = '昵称,邮箱,主页'.split(',').filter(function(item){
-  return GUEST_INFO.indexOf(item) > -1
-});
-guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+</div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+  var from = from
+  var setting = set.split(',').filter(function(item){
+  return from.indexOf(item) > -1
+  });
+  setting = setting.length == 0 ? from :setting;
+  return setting
+}
+
+var guestInfo = requestSetting(['nick','mail','link'],'昵称,邮箱,主页')
+var requiredFields = requestSetting(['nick','mail','link'],'nick,mail')
+let friends = ''.split(',')
+let master = 'E31A2DBF0FBCCB786A0B946EBC223E54'.split(',')
 
 window.valine = new Valine({
   el:'#vcomment',
-  notify: false,
-  verify: false,
   appId: 'GUMmCf8y6Du8wRFqQounloa9-gzGzoHsz',
   appKey: '7OR0wXzSpzbY0rgrAIF8sbiJ',
+  notify: false,
+  verify: false,
   placeholder: '快来评论吧！(～￣▽￣)～',
   avatar: 'monsterid',
-  meta: guest_info,
+  meta: guestInfo,
   pageSize: '10',
   lang: 'zh-cn',
   recordIP: true,
-  serverURLs: ''
+  serverURLs: '',
+  emojiCDN: '',
+  emojiMaps: "",
+  enableQQ: true,
+  requiredFields: requiredFields,
+  master: master,
+  friends: friends,
+  metaPlaceholder: {"nick":"昵称/QQ号(必填)","mail":"邮箱(必填)","link":"网址(https://)"}
 });</script></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/shirohasaki/picture-repo@1.0.1/images/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">shirohasaki</div><div class="author-info__description">白羽的秘密小屋</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">1</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">2</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">1</div></a></div></div><div class="card-info-bookmark is-center"><a class="bookmark button--primary button--animated" id="bookmark-it" href="javascript:;" title="加入书签" target="_self"><i class="fa fa-bookmark" aria-hidden="true"></i><span>加入书签</span></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/shirohasaki" target="_blank" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a><a class="social-icon" href="mailto:shiro.nolabera@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fa fa-bullhorn card-announcement-animation" aria-hidden="true"></i><span>公告</span></div><div class="announcement_content">感谢访问本站，研究中.....1%</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fa fa-history" aria-hidden="true"></i><span>最新文章</span></div><div class="aside-recent-item"> <div class="aside-recent-post"><a href="/posts/36862/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.jsdelivr.net/gh/shirohasaki/picture-repo@1.0.1/images/post-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="hexo和github建站笔记" alt="hexo和github建站笔记"/></div><div class="aside-post-title"><div class="aside-post_title" href="/posts/36862/" title="hexo和github建站笔记">hexo和github建站笔记</div><time class="aside-post_meta post-meta__date" title="发表于 2020-04-15 16:29:42">2020-04-15</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fa fa-folder-open" aria-hidden="true"></i><span>分类</span></div><ul class="aside-category-item">       <li class="aside-category-list"><a class="aside-category-list_link" href="/categories/note/"><span class="aside-category-list_name">note</span><span class="aside-category-list_length">1</span></a></li></ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fa fa-tags" aria-hidden="true"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/github/" style="font-size: 16px; color: #999">github</a> <a href="/tags/hexo/" style="font-size: 16px; color: #999">hexo</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fa fa-archive" aria-hidden="true"></i><span>归档</span></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/"><span class="archive-list-date">2020年04月</span><span class="archive-list-count">1</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fa fa-line-chart" aria-hidden="true"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">1</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" start_date="2020/4/15 12:00:00">     </div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/shirohasaki/picture-repo@1.0.2/images/link.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 By shirohasaki</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text"><a href="http://shirohasaki.github.io/" We make our own luck.</a></div><div id="running-time"><script>setInterval(()=>{let create_time=Math.round(new Date(Date.UTC(2020,03,15,12,0,0)).getTime()/1000);
 let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;
 let time=new Array(0,0,0,0,0);
